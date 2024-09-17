@@ -1,0 +1,24 @@
+/* External Styling */
+
+h2 {
+    text-decoration: underline;
+    color: green;
+    padding: 20px;
+}
+
+.test-1 {
+    font-size: 40px;
+}
+
+#test-2 {
+    text-decoration: overline;
+}
+
+div {
+    padding: 40px;
+    border-width: 2px;
+    border-style: dotted;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
