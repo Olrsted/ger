@@ -5,8 +5,8 @@
 
 # Cheatsheets:  
 **Emmet** - https://docs.emmet.io/cheatsheet-a5.pdf  
-**CSS** - https://classroom.google.com/c/NDk4NjI0MTkzODM1  
-**Git** - https://classroom.google.com/c/NDk4NjI0MTkzODM1  
+**CSS** - https://drive.google.com/file/d/1QXRxJQkyMciSysm72V1QNbnLFs39zDm8/view  
+**Git** - https://drive.google.com/file/d/1eVFnoKWjIvtfPLvuyM-jTO-5yuJQW8ll/view  
 
 # Tutorials:  
 **HTML/CSS/JavaScript** - https://www.w3schools.com/  
