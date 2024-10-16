@@ -1,28 +1,12 @@
+import Menu from "./components/Menu.jsx"
 import './App.css'
-import { useState } from 'react';
 
 function App() {
-
-  const [show, setShow] = useState(true);
-  const food = ['Pizza', 'Hamburger', 'Sushi', 'Biryani'];
-
   return (
-    <div>
-      {
-        show ?
-          <div>
-            <h1>My fav foods!</h1>
-            <ol>
-              {
-                food.map((item, index) => {
-                  return <li key={index}>{item}</li>
-                })
-              }
-            </ol>
-          </div>
-          : <p>Foods Hidden!</p>
-      }
-      <button onClick={() => setShow(!show)}>{show ? "Hide Foods" : "Show Foods"}</button>
+    <div className="menu-container">
+      <Menu title={'Food Menu'} items={['Pizza', 'Hamburger', 'Sushi', 'Biryani']} />
+      <Menu title={'Beverage Menu'} items={['Coke', '7-UP', 'Tea', 'Coffee', 'Bubble Tea']} />
+      <Menu title={'Dessert Menu'} items={['Cake', 'Ice Cream', 'Pudding']} />
     </div>
   )
 }
