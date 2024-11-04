@@ -1,0 +1,109 @@
+/* MovieDetail.css */
+
+.movie-detail {
+    background-color: #141414;
+    /* Dark background for contrast */
+    color: #e5e5e5;
+    /* Light text color */
+    padding: 20px;
+    /* Spacing inside the container */
+    border-radius: 8px;
+    /* Rounded corners */
+    max-width: 600px;
+    /* Limit the width of the detail card */
+    margin: auto;
+    /* Center the card horizontally */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow effect */
+}
+
+.movie-title {
+    font-size: 2rem;
+    /* Larger font size for the title */
+    margin: 0;
+    /* Remove default margin */
+    color: #e50914;
+    /* Netflix red for the title */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.movie-overview {
+    font-size: 1rem;
+    /* Standard font size for overview */
+    line-height: 1.5;
+    /* Improve readability with line height */
+    margin: 10px 0;
+    /* Space above and below the overview */
+}
+
+.movie-info {
+    margin: 10px 0;
+    /* Space for the info section */
+}
+
+.movie-info p {
+    margin: 5px 0;
+    /* Space for individual info lines */
+}
+
+.movie-poster {
+    margin-top: 15px;
+    /* Space above the poster image */
+    width: 100%;
+    /* Make the image responsive */
+    border-radius: 5px;
+    /* Rounded corners for the image */
+}
+
+/* DetailMovieView.css */
+
+.trailers-section {
+    margin-top: 20px;
+    /* Space above trailers section */
+    padding: 10px;
+    /* Padding for trailers section */
+    background-color: #222;
+    /* Dark background for trailers */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.trailers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Responsive grid */
+    gap: 10px;
+    /* Space between tiles */
+}
+
+.trailer-tile {
+    background-color: #333;
+    /* Background color for each tile */
+    border-radius: 5px;
+    /* Rounded corners for tiles */
+    overflow: hidden;
+    /* Hide overflow */
+    transition: transform 0.2s;
+    /* Smooth hover effect */
+}
+
+.trailer-tile:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+.trailer-thumbnail {
+    width: 100%;
+    /* Make the thumbnail responsive */
+    border-bottom: 2px solid #e50914;
+    /* Bottom border for style */
+}
+
+.trailer-tile h3 {
+    color: #e5e5e5;
+    /* Light color for trailer title */
+    margin: 5px;
+    /* Margin for title */
+    font-size: 1rem;
+    /* Font size for title */
+}
