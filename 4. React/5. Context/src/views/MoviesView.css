@@ -1,0 +1,53 @@
+/* Overall container styling */
+.app-container {
+    background-color: #141414; /* Netflix dark theme background */
+    color: #e5e5e5; /* Light gray text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Header styling */
+  .header {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Header title */
+  .header h1 {
+    font-size: 2.5rem;
+    color: #e50914; /* Netflix red */
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Logout button styling */
+  .logout-button {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: #b00610; /* Darker red for hover */
+  }
+  
+  /* Outlet content area styling */
+  .outlet-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+  }
+  
