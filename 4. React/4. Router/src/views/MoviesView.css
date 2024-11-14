@@ -1,53 +1,66 @@
-/* Overall container styling */
+/* General container for the app */
 .app-container {
-    background-color: #141414; /* Netflix dark theme background */
-    color: #e5e5e5; /* Light gray text */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-  }
-  
-  /* Header styling */
-  .header {
-    width: 100%;
-    max-width: 900px;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #333;
-    margin-bottom: 30px;
-  }
-  
-  /* Header title */
+  background-color: #141414; /* Dark background */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header with the user welcome and buttons */
+.header {
+  width: 100%;
+  background-color: #141414; /* Dark background to match the app */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for separation */
+}
+
+/* Netflix-like text for the welcome message */
+.header h1 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Simple and clean buttons */
+button {
+  background-color: #e50914; /* Netflix red */
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #f40612; /* Darker red when hovered */
+}
+
+/* Margin for the rest of the page to ensure content is below the fixed header */
+.app-container > div {
+  margin-top: 60px; /* Adds space below the fixed header */
+}
+
+/* Button for logout and cart */
+.logout-button {
+  margin-left: 10px; /* Space between buttons */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
   .header h1 {
-    font-size: 2.5rem;
-    color: #e50914; /* Netflix red */
-    margin: 0;
-    font-weight: bold;
+    font-size: 16px; /* Slightly smaller text */
   }
-  
-  /* Logout button styling */
-  .logout-button {
-    background-color: #e50914; /* Netflix red */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 20px;
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
   }
-  
-  .logout-button:hover {
-    background-color: #b00610; /* Darker red for hover */
-  }
-  
-  /* Outlet content area styling */
-  .outlet-container {
-    width: 100%;
-    max-width: 900px;
-    padding: 20px;
-  }
-  
+}

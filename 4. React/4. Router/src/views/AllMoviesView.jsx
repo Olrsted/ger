@@ -30,7 +30,6 @@ function AllMoviesView() {
             alt={movie.title}
             className="movie-poster"
           />
-          <p className="movie-title">{movie.title}</p>
         </div>
       ))}
     </div>

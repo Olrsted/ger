@@ -31,10 +31,3 @@
     transition: opacity 0.3s ease;
 }
 
-/* Movie Title below the Poster */
-.movie-title {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #e50914; /* Netflix red */
-    font-weight: bold;
-}
