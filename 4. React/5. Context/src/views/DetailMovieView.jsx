@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useStoreContext } from "../context";
 import "./DetailMovieView.css"
 
 function DetailMovieView() {
 
   const [movie, setMovie] = useState([]);
+  const { cart, setCart } = useStoreContext();
   const params = useParams();
 
   useEffect(() => {
@@ -19,6 +21,7 @@ function DetailMovieView() {
 
   return (
     <div className="movie-detail">
+      <button onClick={() => setCart((prevCart) => prevCart.set(params.id, { title: movie.original_title, url: movie.poster_path }))} className="buy-button">Buy</button>
       <h1 className="movie-title">{movie.original_title}</h1>
       <p className="movie-overview">{movie.overview}</p>
       <div className="movie-info">

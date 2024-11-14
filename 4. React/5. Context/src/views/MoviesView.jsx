@@ -11,10 +11,15 @@ function MoviesView() {
     navigate("/");
   }
 
+  function cart() {
+    navigate("/cart")
+  }
+
   return (
     <div className="app-container">
       <div className="header">
         <h1>{`Welcome, ${email}!`}</h1>
+        <button onClick={() => cart()} className="logout-button">Cart</button>
         <button onClick={() => logout()} className="logout-button">Logout</button>
       </div>
       <Outlet />
