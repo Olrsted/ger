@@ -1,0 +1,82 @@
+.movie-detail {
+    background-color: #141414; /* Dark background */
+    color: white; /* White text for contrast */
+    padding: 20px;
+    max-width: 800px; /* Limit width for better readability */
+    margin: auto; /* Center the content */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  }
+  
+  .movie-title {
+    font-size: 2.5em; /* Large title */
+    margin-bottom: 10px; /* Spacing below title */
+  }
+  
+  .movie-overview {
+    font-size: 1.2em; /* Slightly larger overview text */
+    margin: 15px 0; /* Spacing above and below overview */
+    line-height: 1.5; /* Improved readability */
+  }
+  
+  .movie-info {
+    font-size: 1em; /* Regular font size for info */
+    margin: 20px 0; /* Spacing around info */
+  }
+  
+  .movie-poster {
+    width: 100%; /* Full width for the poster */
+    border-radius: 10px; /* Rounded corners for the poster */
+    margin: 15px 0; /* Spacing above and below poster */
+  }
+  
+  .trailers-section {
+    margin-top: 30px; /* Space above trailers section */
+  }
+  
+  .trailers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 15px; /* Space between trailer tiles */
+  }
+  
+  .trailer-tile {
+    position: relative; /* For better positioning */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    border-radius: 8px; /* Rounded corners for trailer tiles */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.2s; /* Smooth hover effect */
+  }
+  
+  .trailer-tile:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .trailer-thumbnail {
+    width: 100%; /* Full width for thumbnails */
+    height: auto; /* Auto height for aspect ratio */
+    border-radius: 8px; /* Rounded corners for thumbnails */
+  }
+  
+  .trailer-tile h3 {
+    position: absolute; /* Position text over the thumbnail */
+    bottom: 10px; /* Positioning from the bottom */
+    left: 10px; /* Positioning from the left */
+    color: white; /* White text for contrast */
+    font-size: 0.9em; /* Slightly smaller font size */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 5px; /* Padding around text */
+    border-radius: 4px; /* Rounded corners for text background */
+  }
+  
+  .buy-button {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
